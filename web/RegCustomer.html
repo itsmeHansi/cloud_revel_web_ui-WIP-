@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Test Page
+        </title>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            p {
+                font-family: verdana;
+                font-size: 20px;
+            }
+            .myDiv {
+                border: 5px olive;
+                background-color: azure;    
+                text-align: center;
+                width: 1000px;
+                height: 1000px;
+                position: relative;
+                left: 35%;
+                width: 30%;
+                top: 30%; 
+            }
+           
+            input[type=text], select {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit], button {
+                width: 75%;
+                background-color: darkmagenta;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .lable{
+                position: relative;
+                float: left;
+                left: 15%;
+                height: 40%;
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Customer Registration</h1>
+
+        <div class="myDiv">
+            <form>
+                <label for ="fname" class="lable">Name</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input" placeholder="Enter your name">
+                <br><br>
+                <label for ="fname" class="lable" >Contact 01</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input" placeholder="Enter Your Contact no">  
+                <br> <br>
+                <label for ="fname" class="lable">Contact 02</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input" placeholder="Enter your contact no 2">  
+                <br> <br>
+                <label for ="fname" class="lable">Address</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input" placeholder="Enter Address">  
+                <br> <br>
+                <label for ="fname" class="lable">E-mail</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input" placeholder="Enter your Email Address">
+                <br><br>
+                <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Remarks"> </textarea>
+                
+           
+                    <button type="button" onclick="alert('Thank you for your Submition')"> Save</button>
+                </form>
+        </div>
+    </body>
+</html>

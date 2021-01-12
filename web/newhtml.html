@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Test Page
+        </title>
+        <style>
+            body {
+                background-color: darkkhaki
+            }
+
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            p {
+                font-family: verdana;
+                font-size: 20px;
+            }
+            .myDiv {
+                border: 5px outset red;
+                background-color: lightblue;    
+                text-align: center;
+                width: 1000px;
+                height: 1000px;
+                position: relative;
+                left: 30%;
+                width: 30%;
+                top: 20%; 
+            }
+            /*            .input{
+                            position: relative;
+                            top: 30%;
+                            width: 250PX;
+                            height: 40%;
+                        }*/
+            input[type=text], select {
+                width: 70%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type=submit], button {
+                width: 75%;
+                background-color: darkmagenta;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .lable{
+                position: relative;
+                float: left;
+                left: 15%;
+                height: 40%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>User Registration</h1>
+
+        <div class="myDiv">
+            <form>
+                <label for ="fname" class="lable">Name</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input">
+                <br><br>
+                <label for ="fname" class="lable">Address</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input">  
+                <br> <br>
+                <label for ="fname" class="lable">E-mail</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input">
+                <br><br>
+                <label for ="fname" class="lable">Contact</label>
+                <br>
+                <input type="text" id="fname" name="fname" class="input">
+                <br><br>
+                <form action="/#">
+                    <label for="cars" class="lable">Gender:</label>
+                    <br>
+                    <select name="Gender" id="Gender" class="input">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <br> <br>
+                    <button type="button" onclick="alert('Thank you for your Submition')"> Save</button>
+                </form>
+        </div>
+    </body>
+</html>
